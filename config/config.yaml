@@ -1,0 +1,21 @@
+upload:
+  allowed_extensions: ['csv']
+  max_file_size: 104857600  # 100MB in bytes
+  upload_folder: 'data/uploads'
+
+model:
+  random_state: 42
+  test_size: 0.2
+  cv_folds: 5
+  n_estimators: 100
+
+preprocessing:
+  missing_value_strategy: 'mean'
+  scaling_method: 'standard'
+  feature_selection_threshold: 0.01
+
+visualization:
+  max_planets_display: 100
+  galaxy_radius: 1000
+  star_base_size: 3.0
+  planet_base_size: 0.5
